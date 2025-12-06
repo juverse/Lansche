@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julia Lansche - Portfolio</title>
+    <meta name="description"
+        content="Portfolio von Julia Lansche - Kognitionswissenschaftlerin mit Fokus auf Data Science und Human-AI Interaction.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">Julia Lansche</a>
+            <ul class="nav-links">
+                <li><a href="#about" data-i18n="nav_about">Über mich</a></li>
+                <li><a href="#skills" data-i18n="nav_skills">Kompetenzen</a></li>
+                <li><a href="#experience" data-i18n="nav_experience">Erfahrung</a></li>
+                <li><a href="#projects" data-i18n="nav_projects">Projekte</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Kontakt</a></li>
+                <li><button id="lang-toggle" class="lang-btn">EN</button></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="greeting" data-i18n="hero_greeting">Hallo, ich bin</span>
+                <h1>Julia Lansche</h1>
+                <h2 class="dynamic-text"><span data-i18n="hero_occupation">Kognitionswissenschaftlerin</span> & <span
+                        id="typewriter"></span></h2>
+                <p data-i18n="hero_description">Ich verbinde Informatik und Psychologie, um intuitive und intelligente
+                    Lösungen zu schaffen. Mein
+                    Fokus liegt auf Data Science und Human-AI Interaction.</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary" data-i18n="btn_contact">Kontaktieren</a>
+                    <a href="#projects" class="btn btn-secondary" data-i18n="btn_projects">Meine Projekte</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="photo-wrapper">
+                    <img src="Bewerbungsfoto.jpg" alt="Julia Lansche" class="profile-photo">
+                    <div class="photo-blob"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about_title">Über mich</h2>
+            <div class="about-grid">
+                <div class="about-card glass">
+                    <h3 data-i18n="education_title">Ausbildung</h3>
+                    <ul class="timeline-list">
+                        <li>
+                            <span class="date">10/2023 - heute</span>
+                            <strong data-i18n="edu_master_title">M. Sc. Kognitionswissenschaft</strong>
+                            <p data-i18n="edu_uni_tuebingen">Universität Tübingen</p>
+                            <p class="detail"><span data-i18n="focus_label">Schwerpunkte:</span> <span
+                                    data-i18n="edu_master_focus">Data Science, Human-AI Interaction</span></p>
+                            <p class="detail"><span data-i18n="thesis_label">Masterarbeit:</span> Effects of LLM
+                                Interaction Modality in Information-Seeking
+                            </p>
+                        </li>
+                        <li>
+                            <span class="date">10/2019 - 05/2023</span>
+                            <strong data-i18n="edu_bachelor_title">B. Sc. Kognitionswissenschaft</strong>
+                            <p><span data-i18n="edu_uni_tuebingen">Universität Tübingen</span> (<span
+                                    data-i18n="grade_label">Note</span>: 1.3)</p>
+                            <p class="detail"><span data-i18n="focus_label">Schwerpunkte:</span> <span
+                                    data-i18n="edu_bachelor_focus">Machine Learning, Human-Computer Interaction</span>
+                            </p>
+                            <p class="detail"><span data-i18n="bachelor_thesis_label">Bachelorarbeit:</span> Mind
+                                Wandering Detection with Eye Tracking and Machine
+                                Learning</p>
+                        </li>
+                        <li>
+                            <span class="date">09/2018 - 08/2019</span>
+                            <strong data-i18n="edu_business_title">Grundstudium Betriebswirtschaft</strong>
+                            <p><span data-i18n="edu_fh_pforzheim">Fachhochschule Pforzheim</span> (<span
+                                    data-i18n="grade_label">Note</span>: 1.7)</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-card glass">
+                    <h3 data-i18n="international_title">International</h3>
+                    <ul class="icon-list">
+                        <li><i class="fa-solid fa-earth-europe"></i> <span data-i18n="int_oslo">Auslandssemester an der
+                                Universitetet i Oslo,
+                                Norwegen (6 Monate, 2022)</span></li>
+                        <li><i class="fa-solid fa-plane"></i> <span data-i18n="int_korea">Aufenthalt in Südkorea (6
+                                Wochen, 2024)</span></li>
+                        <li><i class="fa-solid fa-passport"></i> <span data-i18n="int_travel">Reisen nach Namibia,
+                                Island, Brasilien</span></li>
+                    </ul>
+                    <h3 class="mt-4" data-i18n="languages_title">Sprachen</h3>
+                    <div class="skills-tags">
+                        <span class="tag" data-i18n="lang_german">Deutsch (Muttersprache)</span>
+                        <span class="tag" data-i18n="lang_english">Englisch (C1)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section alt-bg">
+        <div class="container">
+            <h2 class="section-title" data-i18n="skills_title">Kompetenzen</h2>
+            <div class="skills-grid">
+                <div class="skill-category glass">
+                    <div class="icon-box"><i class="fa-brands fa-python"></i></div>
+                    <h3 data-i18n="skills_prog_data">Programming & Data</h3>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>R</span>
+                        <span>Java</span>
+                        <span>Mixpanel</span>
+                        <span>Tableau</span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <div class="icon-box"><i class="fa-solid fa-code"></i></div>
+                    <h3 data-i18n="skills_web_design">Web & Design</h3>
+                    <div class="skill-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Typescript</span>
+                        <span>Figma</span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <div class="icon-box"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                    <h3 data-i18n="skills_tools">Tools</h3>
+                    <div class="skill-tags">
+                        <span>VS Code</span>
+                        <span>Git</span>
+                        <span>Copilot</span>
+                        <span>Docker</span>
+                        <span>LaTeX</span>
+                        <span>Confluence</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="experience_title">Berufserfahrung</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <span class="date">10/2025 - heute</span>
+                        <h3 data-i18n="exp_ai_center_title">Stud. Mitarbeiterin in Produktentwicklung</h3>
+                        <h4>Tübingen AI Center</h4>
+                        <ul>
+                            <li data-i18n="exp_ai_center_1">Durchführung von Anforderungsanalysen</li>
+                            <li data-i18n="exp_ai_center_2">Entwicklung des Produkts von der Ideenfindung bis zum Launch
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <span class="date">10/2023 - 05/2025</span>
+                        <h3 data-i18n="exp_itdesign_student_title">Werkstudentin in Data Analysis/Data Science</h3>
+                        <h4>itDesign GmbH</h4>
+                        <ul>
+                            <li data-i18n="exp_itdesign_student_1">Analyse von Nutzungsdaten zur Identifizierung von
+                                Mustern und Trends mithilfe von
+                                Machine Learning</li>
+                            <li data-i18n="exp_itdesign_student_2">Entwicklung von Dashboards und Reports</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <span class="date">05/2023 - 08/2023</span>
+                        <h3 data-i18n="exp_itdesign_intern_title">Praktikantin in Data Analysis/Data Science</h3>
+                        <h4>itDesign GmbH</h4>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <span class="date">2020 - 2022</span>
+                        <h3 data-i18n="exp_tutor_title">Tutorin für Mathematik</h3>
+                        <h4 data-i18n="exp_uni_tuebingen_math">Universität Tübingen</h4>
+                        <ul>
+                            <li data-i18n="exp_tutor_1">Vorbereitung und Durchführung wöchentlicher Übungen</li>
+                            <li data-i18n="exp_tutor_2">Korrektur und Bewertung von Hausaufgaben und Prüfungen</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section alt-bg">
+        <div class="container">
+            <h2 class="section-title" data-i18n="projects_title">Projekte</h2>
+            <div class="projects-grid">
+                <div class="project-card glass">
+                    <div class="project-content">
+                        <h3 data-i18n="proj_museum_title">LLM as a Virtual Museum Guide</h3>
+                        <span class="date">03/2025 - 05/2025</span>
+                        <p data-i18n="proj_museum_desc">Entwicklung eines virtuellen Museumsführers basierend auf Large
+                            Language Models.</p>
+                        <div class="tags">
+                            <span>LLM</span>
+                            <span>AI</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass">
+                    <div class="project-content">
+                        <h3 data-i18n="proj_emotion_title">Multilinguale Emotionserkennung</h3>
+                        <span class="date">10/2024 - 03/2025</span>
+                        <p data-i18n="proj_emotion_desc">Projekt zur Erkennung von Emotionen in verschiedenen Sprachen
+                            mithilfe von Machine Learning
+                            Algorithmen.</p>
+                        <div class="tags">
+                            <span>Machine Learning</span>
+                            <span>NLP</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass">
+                    <div class="project-content">
+                        <h3 data-i18n="proj_sportapp_title">UX/UI Design für Sportapp</h3>
+                        <span class="date">04/2025 - 07/2025</span>
+                        <p data-i18n="proj_sportapp_desc">Konzeption des User Interface und der User Experience für eine
+                            mobile Sportanwendung.</p>
+                        <div class="tags">
+                            <span>Figma</span>
+                            <span>Design Thinking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="interests" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="interests_engagement_title">Interessen & Engagement</h2>
+            <div class="interests-wrapper">
+                <div class="interest-col glass">
+                    <h3><i class="fa-solid fa-heart"></i> <span data-i18n="interests_title">Interessen</span></h3>
+                    <div class="pill-cloud">
+                        <span data-i18n="int_dance">Tanz und Theater</span>
+                        <span data-i18n="int_guitar">Gitarre spielen</span>
+                        <span data-i18n="int_travel_int">Reisen</span>
+                        <span data-i18n="int_video">Videos schneiden</span>
+                        <span data-i18n="int_games">Gesellschaftsspiele</span>
+                    </div>
+                </div>
+                <div class="interest-col glass">
+                    <h3><i class="fa-solid fa-hand-holding-heart"></i> <span
+                            data-i18n="engagement_title">Engagement</span></h3>
+                    <ul class="compact-list">
+                        <li><strong data-i18n="role_mentor">Mentorin</strong> <span data-i18n="eng_cybermentor">bei
+                                CyberMentor (seit 10/2025)</span></li>
+                        <li><strong data-i18n="role_course_instructor">Kursleiterin</strong> <span
+                                data-i18n="eng_it4kids">bei It4kids (2024)</span></li>
+                        <li><strong data-i18n="role_buddy">Buddy</strong> <span data-i18n="eng_buddy">für internationale
+                                Studierende (2022-2024)</span></li>
+                        <li><strong data-i18n="role_youth_leader">Jugendgruppenleiterin</strong> <span
+                                data-i18n="eng_cvjm">CVJM (2015-2018)</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h2 data-i18n="footer_title">Lass uns zusammenarbeiten</h2>
+                <p data-i18n="footer_text">Ich freue mich auf neue Herausforderungen und spannende Projekte.</p>
+                <div class="contact-cards">
+                    <a href="mailto:julia.lansche.karriere@gmail.com" class="contact-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>julia.lansche.karriere@gmail.com</span>
+                    </a>
+                    <a href="https://github.com/juverse" target="_blank" class="contact-card">
+                        <i class="fa-brands fa-github"></i>
+                        <span>github.com/juverse</span>
+                    </a>
+                    <div class="contact-card">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span data-i18n="footer_location">Tübingen, Deutschland</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Julia Lansche. <span data-i18n="footer_rights">Alle Rechte vorbehalten.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
