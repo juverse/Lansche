@@ -74,7 +74,8 @@ document.addEventListener('DOMContentLoaded', () => {
             footer_title: "Lass uns zusammenarbeiten",
             footer_text: "Ich freue mich auf neue Herausforderungen und spannende Projekte.",
             footer_location: "Tübingen, Deutschland",
-            footer_rights: "Alle Rechte vorbehalten."
+            footer_rights: "Alle Rechte vorbehalten.",
+            date_present: "heute"
         },
         en: {
             nav_about: "About Me",
@@ -149,7 +150,8 @@ document.addEventListener('DOMContentLoaded', () => {
             footer_title: "Let's work together",
             footer_text: "I am looking forward to new challenges and exciting projects.",
             footer_location: "Tübingen, Germany",
-            footer_rights: "All rights reserved."
+            footer_rights: "All rights reserved.",
+            date_present: "present"
         }
     };
 
