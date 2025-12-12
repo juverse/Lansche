@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             nav_contact: "Kontakt",
             hero_greeting: "Hallo, ich bin",
             hero_occupation: "Kognitionswissenschaftlerin",
-            hero_description: "Ich verbinde Informatik und Psychologie, um intuitive und intelligente Lösungen zu schaffen. Mein Fokus liegt auf Data Science und Human-AI Interaction.",
+            hero_description: "Ich verbinde Informatik und Psychologie, um intuitive und intelligente Lösungen zu schaffen.",
             btn_contact: "Kontaktieren",
             btn_projects: "Meine Projekte",
             about_title: "Über mich",
@@ -74,7 +74,8 @@ document.addEventListener('DOMContentLoaded', () => {
             footer_title: "Lass uns zusammenarbeiten",
             footer_text: "Ich freue mich auf neue Herausforderungen und spannende Projekte.",
             footer_location: "Tübingen, Deutschland",
-            footer_rights: "Alle Rechte vorbehalten."
+            footer_rights: "Alle Rechte vorbehalten.",
+            date_present: "heute"
         },
         en: {
             nav_about: "About Me",
@@ -84,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
             nav_contact: "Contact",
             hero_greeting: "Hello, I am",
             hero_occupation: "Cognitive Scientist",
-            hero_description: "I combine Computer Science and Psychology to create intuitive and intelligent solutions. My focus is on Data Science and Human-AI Interaction.",
+            hero_description: "I combine Computer Science and Psychology to create intuitive and intelligent solutions.",
             btn_contact: "Contact Me",
             btn_projects: "My Projects",
             about_title: "About Me",
@@ -149,7 +150,8 @@ document.addEventListener('DOMContentLoaded', () => {
             footer_title: "Let's work together",
             footer_text: "I am looking forward to new challenges and exciting projects.",
             footer_location: "Tübingen, Germany",
-            footer_rights: "All rights reserved."
+            footer_rights: "All rights reserved.",
+            date_present: "present"
         }
     };
 
@@ -166,8 +168,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Typewriter Effect - variables must be declared before setLanguage uses them
     const textElement = document.getElementById('typewriter');
     const typewriterWords = {
-        de: ['Data Scientist', 'Human-AI Researcher', 'Developer'],
-        en: ['Data Scientist', 'Human-AI Researcher', 'Developer']
+        de: ['Developer', 'Human-AI Researcher', 'Data Scientist'],
+        en: ['Developer', 'Human-AI Researcher', 'Data Scientist']
     };
     let currentTypewriterTimeout;
 

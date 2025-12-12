@@ -211,6 +211,8 @@ ul {
     color: var(--text-light);
     font-weight: 500;
     margin-bottom: 1.5rem;
+    min-height: 3.2em;
+    /* Prevents layout shift from typewriter effect */
 }
 
 .hero p {
